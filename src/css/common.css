@@ -1,6 +1,6 @@
 
 .search-form {
-margin: auto;
+margin-left: 40%;
 }
 
 .gallery {
@@ -10,11 +10,16 @@ padding: 10px;
 }
 
 .photo-card {
-    width: 30%;
+    width: 20%;
     padding: 10px;
 }
 
 .info {
     display: flex;
     justify-content: space-around;
+}
+
+.load-more {
+    margin-left: 45%;
+    
 }
