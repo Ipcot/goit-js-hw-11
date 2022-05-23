@@ -1,13 +1,11 @@
 import axios from 'axios';
-import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 export class Request {
   constructor() {
     this.searchQuery = '';
     this.page = 1;
   }
-    async fetchPayload() {
-      
+  async fetchPayload() {
     const API_KEY = '27561705-01d67e91a566568adc5cfd7f5';
     const BASE_URL = 'https://pixabay.com/api/';
     const searchParams = new URLSearchParams({
@@ -19,7 +17,6 @@ export class Request {
       page: this.page,
       per_page: 40,
     });
-    
 
     const payload = await axios(`${BASE_URL}?${searchParams}`);
 
@@ -37,9 +34,9 @@ export class Request {
 
   resetPage() {
     this.page = 1;
-    }
-    
-    currentPage() {
-      return  this.page - 1;
+  }
+
+  currentPage() {
+    return this.page - 1;
   }
 }

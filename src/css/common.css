@@ -1,23 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+        display: block;
+            width: 100%;
+            border: none;
+            object-fit: cover;
+}
 
 .search-form {
+    position: fixed;
 margin-left: 40%;
+padding: 10px;
+border-radius: 5px;
+border: 4px gray;
 }
 
+ input {
+     height: 30px;
+    background-color: gainsboro;
+    border-color: gainsboro;
+    border-radius: 5px;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+ button {
+    height: 30px;
+    background-color: gainsboro;
+    border-color: gainsboro;
+border-radius: 5px;
+box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
 .gallery {
     display: flex;
-    flex-wrap: wrap;
-padding: 10px;
-}
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: -5px;
+        margin-bottom: -5px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
 
 .photo-card {
-    width: 20%;
-    padding: 10px;
+        flex-basis: calc(100% / 4 - 5px);
+        margin-left: 5px;
+        margin-bottom: 5px;
+            
+            border-radius: 4px;
+            box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+      
 }
 
 .info {
     display: flex;
     justify-content: space-around;
+    align-content: center;
+padding: 2px;
+font-size: 14px;
+
 }
+
+.info-item {
+    text-align: center;
+    padding: 2px;
+}
+
 
 .load-more {
     margin-left: 45%;
